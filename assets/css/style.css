@@ -169,13 +169,6 @@ figure {
     font-size: 36px;
 }
 
-/* ADDED: .contents-p to handle overflow of p */
-.content-p {
-    position: relative;
-    overflow: auto;
-    text-overflow: ellipsis;
-}
-
 .benefits {
     margin-right: 20px;
     padding: 20px;
