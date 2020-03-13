@@ -1,12 +1,6 @@
 # Homework 1
 In this assignment, I was tasked to refactor existing code to meet specific criteria and to make it more accesible.
 
-Website Snapshot
-
-=================
-![Image](Horiseon1.png)
-![Image](Horiseon2.png)
-
 ## User Story
 ```
 AS A developer
@@ -33,6 +27,11 @@ GIVEN a webpage meets accessibility standards
 - IF I  title element
 -> THEN concise, descriptive title
 ```
+
+## Website Snapshot
+===================
+![Image](Horiseon1.png)
+![Image](Horiseon2.png)
 
 ### Improvements:
 1. Ensured links function correctly
