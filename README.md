@@ -4,7 +4,8 @@ In this assignment, I was tasked to refactor existing code to meet specific crit
 Website Snapshot
 
 =================
-![Image](chrome_vGiqS64eLn.png)
+![Image](Horiseon1.png)
+![Image](Horiseon2.png)
 
 ## User Story
 ```
