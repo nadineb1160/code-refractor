@@ -8,27 +8,27 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
-    padding: 20px;
+.nav-bar {
+    /* CHANGED: padding from 20px to 10px so that background-img is behind nav-bar */
+    padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+/* REMOVED: .header, only one h1 instance */
+h1 {
     display: inline-block;
     font-size: 48px;
-    /* ADDED: color from below */
-    color: #d9dcd6;
 }
 
-/* h1 and .seo are the same and only instance*/
-/* 
-.header h1 .seo {
+/* REMOVED: .header h1, only one .seo instance */
+.seo {
     color: #d9dcd6;
-}  */
+} 
 
-.header div {
+/* REMOVED: .header, same as <ul> */
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -36,15 +36,18 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+/* CHANGED: nav div  */
+nav ul {
     list-style-type: none;
 }
 
-.header div ul li {
+/* CHANGED: .header div ul li */
+.nav-bar nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* ADDED: li properties from above */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -55,9 +58,11 @@ p {
 }
 
 /* CHANGED: .hero to background-img class */
-.background-img {
+figure {
     height: 800px;
     width: 100%;
+    /* ADDED: margin-top so that nav bar is ontop of background image */
+    /* margin-top: -15px; */
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
@@ -80,7 +85,8 @@ p {
     margin-left: 20px;
 }
 
-.search-engine-optimization {
+/* REMOVED: redundent property value pairs */
+/* .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -88,6 +94,7 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
@@ -104,37 +111,69 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+} */
+
+/* ADDED: .content-box with properties above */
+.content-box {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
 
-.search-engine-optimization img {
+/* REMOVED: redundant property-value pairs */
+/*.search-engine-optimization img {
     max-height: 200px;
 }
 
 .online-reputation-management img {
     max-height: 200px;
+
 }
 
 .social-media-marketing img {
     max-height: 200px;
+} */
+
+
+/* ADDED: .content-box img with properties above */
+.content-box img {
+    max-height: 200px;
+    /* ADDED: max-width */
+    max-width: 50%;
 }
 
-/* MOVED: CONTENT ABOVE BENEFITS */
-/* CHANGED: h3 to h2 */
-.search-engine-optimization h2 {
+/* REMOVED: redundant property-value pairs */
+/* .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-/* CHANGED: h3 to h2 */
 .online-reputation-management h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-/* CHANGED: h3 to h2 */
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
+} */
+
+/* MOVED: CONTENT ABOVE BENEFITS */
+/* ADDED: content-box h3 with properties above */
+/* CHANGED: h3 to h2*/
+.content-box h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* ADDED: .contents-p to handle overflow of p */
+.content-p {
+    position: relative;
+    overflow: auto;
+    text-overflow: ellipsis;
 }
 
 .benefits {
@@ -148,7 +187,8 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* REMOVED: redundant property-value pairs */
+/* .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -161,27 +201,42 @@ p {
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
+} */
+
+/* ADDED: .benefit-box with properties above */
+.benefit-box {
+    margin-bottom: 32px;
+    color: #ffffff;
+    /* ADDED: text-align to all text */
+    text-align: center;
 }
 
-/* CHANGED: h3 to h2 */
-.benefit-lead h2 {
+/* REMOVED: redundant property-value pairs */
+/* .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* CHANGED: h3 to h2 */
-.benefit-brand h2 {
+.benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* CHANGED: h3 to h2 */
-.benefit-cost h2 {
+.benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
+} */
+
+/* ADDED: benefit-box with properties above*/
+/* CHANGED: h3 to h2 */
+.benefit-box h2 {
+    margin-bottom: 10px;
+    /* REMOVED: text-align, in .benefit-box */
+    /* text-align: center; */
 }
 
-.benefit-lead img {
+/* REMOVED: redundant property-value pairs */
+/* .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -197,20 +252,24 @@ p {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+} */
+
+/* ADDED: benefit-box img with properties above */
+.benefit-box img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
-/* ADDED: text-align on icon texts */
-.icon {
-    text-align: center;
-}
-
-.footer {
+/* CHANGED: .footer to footer */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+/* CHANGED: .footer to footer */
+footer h2 {
     font-size: 20px;
 }
