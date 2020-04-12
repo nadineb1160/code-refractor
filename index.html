@@ -14,16 +14,11 @@
     <!-- **** Navigation Bar **** -->
     <!-- ************************ -->
 
-    <!-- CHANGED: div to section -->
+    <!-- CHANGED: div to header -->
     <!-- CHANGED: class="header" to "nav-bar" -->
-    <section class="nav-bar">
-        <!-- ADDED: header -->
-        <header>
-            <!-- CHANGED: spacing -->
-            <h1>
-                Hori<span class="seo">seo</span>n
-            </h1>
-        </header>
+    <header class="nav-bar">
+        
+        <h1>Hori<span class="seo">seo</span>n</h1>
 
         <!-- CHANGED: div to nav to represent block of navigation links -->
         <nav>
@@ -33,17 +28,15 @@
                 <li><a href="#social-media-marketing">Social Media Marketing</a></li>
             </ul>
         </nav>
-    </section>
+    </header>
 
     <!-- ************************ -->
     <!-- *** Background Image *** -->
     <!-- ************************ -->
 
     <!-- REMOVED: undescriptive title <div class="hero"> -->
-    <!-- ADDED: figure tag  -->
-    <figure>
-        <!-- image in in CSS background-img class-->
-    </figure>
+    <!-- ADDED: class="bg-img"  -->
+    <div class="bg-img"></div>
 
     <!-- ************************ -->
     <!-- ******* Content ******** -->
@@ -51,9 +44,8 @@
 
     <!-- CHANGED: div for article  -->
     <article class="content">
-        <!-- REMOVED: class="search-engine-optimization" -->
-        <!-- ADDED: class="content-box" -->
-        <div class="content-box">
+        
+        <div class="search-engine-optimization" id="search-engine-optimization">
 
             <!-- ADDED: alt tag -->
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="Notebook with SEO characteristics"/>
@@ -67,8 +59,8 @@
             </p>
         </div>
 
-        <!-- REMOVED: id="online-reputation-management" -->
-        <div class="content-box">
+       
+        <div class="online-reputation-management" id="online-reputation-management">
 
             <!-- ADDED: alt tag -->
             <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="Laptop with graphs and charts showing reputation quanified"/>
@@ -82,8 +74,8 @@
             </p>
         </div>
 
-        <!-- REMOVED: id="social-media-marketing" -->
-        <div class="content-box">
+        
+        <div class="social-media-marketing" id="social-media-marketing">
 
             <!-- ADDED: alt tag -->
             <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="Social Media team collaboarting at a table"/>
@@ -107,9 +99,7 @@
     <!-- CHANGED: div for aside -->
     <aside class="benefits">
 
-        <!-- REMOVED: id="benefit-lead" -->
-        <!-- ADDED: id="benefit-box" -->
-        <div class="benefit-box">
+        <div class="benefit-lead">
 
             <!-- CHANGED: h3 to h2 -->
             <h2 class="icon">Lead Generation</h2>
@@ -124,9 +114,8 @@
 
         </div>
 
-        <!-- REMOVED: id="benefit-brand" -->
-        <!-- ADDED: id="benefit-box" -->
-        <div class="benefit-box">
+
+        <div class="benefit-brand">
 
             <!-- CHANGED: h3 to h2 -->
             <h2 class="icon">Brand Awareness</h2>
@@ -140,9 +129,8 @@
             </p>
         </div>
 
-        <!-- REMOVED: id="benefit-cost" -->
-        <!-- ADDED: id="benefit-box" -->
-        <div class="benefit-box">
+       
+        <div class="benefit-cost">
 
              <!-- CHANGED: h3 to h2 -->
             <h2 class="icon">Cost Management</h2>
