@@ -8,29 +8,26 @@ body {
     background-color: #d9dcd6;
 }
 
+/* CHANGED: .header to .navbar */
 .nav-bar {
-    /* CHANGED: padding from 20px to 10px so that background-img is behind nav-bar */
-    padding: 10px;
+    padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-/* REMOVED: .header, only one h1 instance */
-h1 {
+/* CHANGED: .header to .navbar */
+.nav-bar h1 {
     display: inline-block;
     font-size: 48px;
 }
-h2 {
-    position: relative;
-}
 
-/* REMOVED: .header h1, only one .seo instance */
-.seo {
+/* CHANGED: .header to .navbar */
+.nav-bar h1 .seo {
     color: #d9dcd6;
 } 
 
-/* REMOVED: .header, same as <ul> */
+/* REMOVED: .header div, same as nav  */
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -39,8 +36,8 @@ nav {
     font-size: 20px;
 }
 
-/* CHANGED: nav div  */
-nav ul {
+/* CHANGED: .header to .navbar */
+.nav-bar nav ul {
     list-style-type: none;
 }
 
@@ -50,7 +47,7 @@ nav ul {
     margin-left: 25px;
 }
 
-/* ADDED: li properties from above */
+
 a {
     color: #ffffff;
     text-decoration: none;
@@ -60,8 +57,8 @@ p {
     font-size: 16px;
 }
 
-/* CHANGED: .hero to background-img class */
-figure {
+/* CHANGED: .hero to bg-img class */
+.bg-img {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -87,35 +84,10 @@ figure {
 }
 
 /* REMOVED: redundent property value pairs */
-/* .search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-} 
-
+/* ADDED: consolidated propeties */
+.search-engine-optimization,
+.online-reputation-management,
 .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-} */
-
-/* ADDED: .content-box with properties above */
-.content-box {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -126,47 +98,23 @@ figure {
 }
 
 /* REMOVED: redundant property-value pairs */
-/*.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-} */
-
-
-/* ADDED: .content-box img with properties above */
-.content-box img {
+/* ADDED: consolidated propeties */
+.search-engine-optimization img,
+.online-reputation-management img,
+.social-media-marketing img  {
     max-height: 200px;
     /* ADDED: max-width */
     max-width: 50%;
 }
 
 /* REMOVED: redundant property-value pairs */
-/* .search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-} */
-
+/* ADDED: consolidated propeties */
 /* MOVED: CONTENT ABOVE BENEFITS */
-/* ADDED: content-box h3 with properties above */
+/* ADDED: h3 with properties above */
 /* CHANGED: h3 to h2*/
-.content-box h2 {
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -183,23 +131,10 @@ figure {
 }
 
 /* REMOVED: redundant property-value pairs */
-/* .benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
+/* ADDED: consolidated propeties */
+.benefit-lead,
+.benefit-brand,
 .benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-} */
-
-/* ADDED: .benefit-box with properties above */
-.benefit-box {
     margin-bottom: 32px;
     color: #ffffff;
     /* ADDED: text-align to all text */
@@ -207,50 +142,21 @@ figure {
 }
 
 /* REMOVED: redundant property-value pairs */
-/* .benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-} */
-
-/* ADDED: benefit-box with properties above*/
+/* ADDED: consolidated propeties */
 /* CHANGED: h3 to h2 */
-.benefit-box h2 {
+.benefit-lead h2,
+.benefit-brand h2,
+.benefit-cost h2 {
     margin-bottom: 10px;
-    /* REMOVED: text-align, in .benefit-box */
-    /* text-align: center; */
+    text-align: center;
 }
 
 /* REMOVED: redundant property-value pairs */
-/* .benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-} 
+/* ADDED: consolidated propeties */
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
+.benefit-lead img,
+.benefit-brand img,
 .benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-} */
-
-/* ADDED: benefit-box img with properties above */
-.benefit-box img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
