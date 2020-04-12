@@ -30,25 +30,21 @@ I took existing code and refactored to meet specific criteria and to make it mor
 
 <!-- CHANGED: div for article  -->
 <article class="content">
-    <!-- REMOVED: class="search-engine-optimization" -->
-    <!-- ADDED: class="content-box" -->
-    <div class="content-box">
+    
+    <div class="search-engine-optimization" id="search-engine-optimization">
 
         <!-- ADDED: alt tag -->
-        <img src="./assets/images/search-engine-optimization.jpg" 
-        class="float-left" alt="Notebook with SEO characteristics"/>
+        <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="Notebook with SEO characteristics"/>
 
         <h2>Search Engine Optimization</h2>
 
         <p>
-            The dominance of mobile internet use means that users are 
-            searching for the right business as they travel, shop, 
-            or sit on their couch at home. 
-            Search Engine Optimization (SEO) allows you to increase 
-            your visibility and find the right customers for your 
-            business.
+            The dominance of mobile internet use means that users are searching for the right business as they
+            travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase
+            your visibility and find the right customers for your business.
         </p>
     </div>
+<article>
 
 ```
 
