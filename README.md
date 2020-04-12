@@ -1,46 +1,24 @@
-# Homework 1
-In this assignment, I was tasked to refactor existing code to meet specific criteria and to make it more accesible.
+# Code Refactor
+I took existing code and refactored to meet specific criteria and to make it more accesible. As a developer, I want to meet accessibility standards so that our site is optimized for search engines. 
 
-## User Story
-```
-AS A developer
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines
-```
-## Criteria
+ > Technologies Used: HTM, CSS
 
-```
-GIVEN a webpage meets accessibility standards
-
-- IF source code
--> THEN semantic HTML elements
-
-- IF HTML elements
--> THEN elements follow a logical structure 
-
-- IF image elements
--> THEN accessible alt attributes included
-
-- IF heading attributes
--> THEN sequential 
-
-- IF I  title element
--> THEN concise, descriptive title
-```
 
 ## Website Snapshot
-===================
+#
+
 ![Image](Horiseon1.png)
 ![Image](Horiseon2.png)
 
-### Improvements:
+## Improvements Made:
 1. Ensured links function correctly
 2. Cleaned up CSS to make more efficient
 3. Consolidated CSS selectors and properties
 4. Organiged CSS to follow Semantic stucture of the HTML elements
 5. Included comments throughout
 
-### Code Snippet 
+## Code Snippet 
+#
 - Includes comments that show changes and create structure
 - Shows semantic HTML elements that show logical structure
 - Added accessability features
@@ -74,13 +52,11 @@ GIVEN a webpage meets accessibility standards
 
 ```
 
- ## Technologies Used
-- HTML - used to create elements on the DOM
-- CSS - styles html elements on page
-- Git - version control system to track changes to source code
-- GitHub - hosts repository that can be deployed to GitHub Pages
+## Author 
+#
+Nadine Bundschuh
 
-### Author links
 [LinkedIn](https://www.linkedin.com/in/nadine-bundschuh-731233b9)
+|
 [GitHub](https://github.com/nadineb1160)
 
